@@ -17,6 +17,9 @@ $header-font: 'Raleway', 'Cubano', Helvetica, Arial; // weights 700 and 800, for
     font-family: $header-font;
     font-weight: 800;
     font-size: 10vw;
+    h1 {
+      width: 100%;
+    }
   }
   #intro {
     background-image: url("assets/coastline-blur.jpg");
@@ -29,6 +32,7 @@ $header-font: 'Raleway', 'Cubano', Helvetica, Arial; // weights 700 and 800, for
       max-width: 476px;
       margin: 0 auto;
       background-color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 36px;
       .tagline {
         color: $secondary;
         font-size: 48px;
@@ -53,26 +57,19 @@ $header-font: 'Raleway', 'Cubano', Helvetica, Arial; // weights 700 and 800, for
     }
   }
   #use-cases {
-    margin-top: 100px;
     z-index: 2;
-    position: relative;
     background-color: $grey;
+    margin-bottom: 100px;
     &:before {
-      z-index: 2;
-      content: '';
-      position: absolute;
-      left: 0px;
-      right: 0px;
       bottom: 100%;
-      height: 100px;
       background: url('assets/clear-over-grey.png') no-repeat center center/cover;
     }
     h2 {
       color: $secondary-light;
     }
     .columns {
-      margin-left: 60px;
-      margin-right: 60px;
+      margin-left: 20px;
+      margin-right: 20px;
       .column {
         margin: 8px;
         vertical-align: top;
@@ -91,12 +88,119 @@ $header-font: 'Raleway', 'Cubano', Helvetica, Arial; // weights 700 and 800, for
       }
     }
   }
+  #features {
+    background-image: url('assets/earth-from-above.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    margin-top: -100px;
+    padding-bottom: 100px;
+    z-index: 1;
+    color: #fff;
+    &:before {
+      bottom: calc(100% - 100px);
+      background: url('assets/grey-over-clear.png') no-repeat center center/cover;
+    }
+    ul {
+      padding-top: 30px;
+      padding-bottom: 18px;
+      width: auto;
+      display: inline-block;
+      text-align: left;
+      line-height: 28px;
+      font-size: 20px;
+      li {
+        background: url('assets/li-map-marker.png') no-repeat left top;
+        padding: 4px 0px 2px 30px;
+        vertical-align: center;
+        margin-bottom: 26px;
+      }
+    }
+  }
+  #create-your-map {
+    margin-top: 0px;
+    background-color: $primary;
+    padding-bottom: 40px;
+    &:before {
+      bottom: 100%;
+      background: url('assets/clear-over-pink.png') no-repeat center center/cover;
+    }
+    h2 {
+      color: $grey;
+    }
+    .step {
+      padding-top: 60px;
+      text-align: left;
+      h3 {
+        font-size: 36px;
+        color: $secondary;
+        font-family: $primary-font;
+        font-weight: 600;
+        padding-bottom: 36px;
+      }
+      img {
+        display: inline-block;
+      }
+      .instructions {
+        display: inline-block;
+        margin-left: 40px;
+        width: calc(100% - 444px - 60px);
+        vertical-align: top;
+        padding-top: 36px;
+        line-height: 18px;
+      }
+    }
+  }
+  #code-for-atlanta {
+    margin-top: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: $header-font;
+    font-weight: 700;
+    font-size: 20px;
+    &:before {
+      bottom: 100%;
+      background: url('assets/pink-over-clear.png') no-repeat center center/cover;
+    }
+    img {
+      padding-right: 110px;
+      padding-bottom: 40px;
+    }
+    .a-project-of {
+      color: $primary;
+      display: inline-block;
+      width: 110px;
+      vertical-align: top;
+      margin-top: 81px;
+    }
+    .power-user {
+      line-height: 24px;
+      a {
+        color: $secondary;
+      }
+    }
+  }
 }
 .section {
+  padding-left: 40px;
+  padding-right: 40px;
   padding-top: 18px;
-  width: 100%;
+  width: calc(100% - 80px);
   .content {
     max-width: 1024px;
+    margin: 0 auto;
+  }
+  &.diagonal {
+    margin-top: 100px;
+    position: relative;
+    &:before {
+      z-index: 2;
+      content: '';
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      height: 100px;      
+    }
   }
 }
 h2 {
@@ -110,4 +214,7 @@ h3 {
   font-family: $header-font;
   font-weight: 700;
   color: $secondary-light;
+}
+.shadow {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
 }

@@ -9,6 +9,8 @@
     font-family: "Raleway", "Cubano", Helvetica, Arial;
     font-weight: 800;
     font-size: 10vw; }
+    .index #header h1 {
+      width: 100%; }
   .index #intro {
     background-image: url("assets/coastline-blur.jpg");
     background-size: cover;
@@ -19,7 +21,8 @@
     .index #intro .text {
       max-width: 476px;
       margin: 0 auto;
-      background-color: rgba(255, 255, 255, 0.5); }
+      background-color: rgba(255, 255, 255, 0.5);
+      margin-bottom: 36px; }
       .index #intro .text .tagline {
         color: #1d2335;
         font-size: 48px;
@@ -37,24 +40,17 @@
           content: "*";
           padding-right: 5px; }
   .index #use-cases {
-    margin-top: 100px;
     z-index: 2;
-    position: relative;
-    background-color: #f2f2f2; }
+    background-color: #f2f2f2;
+    margin-bottom: 100px; }
     .index #use-cases:before {
-      z-index: 2;
-      content: '';
-      position: absolute;
-      left: 0px;
-      right: 0px;
       bottom: 100%;
-      height: 100px;
       background: url("assets/clear-over-grey.png") no-repeat center center/cover; }
     .index #use-cases h2 {
       color: #4478ba; }
     .index #use-cases .columns {
-      margin-left: 60px;
-      margin-right: 60px; }
+      margin-left: 20px;
+      margin-right: 20px; }
       .index #use-cases .columns .column {
         margin: 8px;
         vertical-align: top;
@@ -68,12 +64,100 @@
           color: #828282;
           font-size: 12px;
           line-height: 16px; }
+  .index #features {
+    background-image: url("assets/earth-from-above.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    margin-top: -100px;
+    padding-bottom: 100px;
+    z-index: 1;
+    color: #fff; }
+    .index #features:before {
+      bottom: calc(100% - 100px);
+      background: url("assets/grey-over-clear.png") no-repeat center center/cover; }
+    .index #features ul {
+      padding-top: 30px;
+      padding-bottom: 18px;
+      width: auto;
+      display: inline-block;
+      text-align: left;
+      line-height: 28px;
+      font-size: 20px; }
+      .index #features ul li {
+        background: url("assets/li-map-marker.png") no-repeat left top;
+        padding: 4px 0px 2px 30px;
+        vertical-align: center;
+        margin-bottom: 26px; }
+  .index #create-your-map {
+    margin-top: 0px;
+    background-color: #f13f72;
+    padding-bottom: 40px; }
+    .index #create-your-map:before {
+      bottom: 100%;
+      background: url("assets/clear-over-pink.png") no-repeat center center/cover; }
+    .index #create-your-map h2 {
+      color: #f2f2f2; }
+    .index #create-your-map .step {
+      padding-top: 60px;
+      text-align: left; }
+      .index #create-your-map .step h3 {
+        font-size: 36px;
+        color: #1d2335;
+        font-family: "Muli", "Avenir Next", "Avenir", Helvetica, Arial;
+        font-weight: 600;
+        padding-bottom: 36px; }
+      .index #create-your-map .step img {
+        display: inline-block; }
+      .index #create-your-map .step .instructions {
+        display: inline-block;
+        margin-left: 40px;
+        width: calc(100% - 444px - 60px);
+        vertical-align: top;
+        padding-top: 36px;
+        line-height: 18px; }
+  .index #code-for-atlanta {
+    margin-top: 100px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-family: "Raleway", "Cubano", Helvetica, Arial;
+    font-weight: 700;
+    font-size: 20px; }
+    .index #code-for-atlanta:before {
+      bottom: 100%;
+      background: url("assets/pink-over-clear.png") no-repeat center center/cover; }
+    .index #code-for-atlanta img {
+      padding-right: 110px;
+      padding-bottom: 40px; }
+    .index #code-for-atlanta .a-project-of {
+      color: #f13f72;
+      display: inline-block;
+      width: 110px;
+      vertical-align: top;
+      margin-top: 81px; }
+    .index #code-for-atlanta .power-user {
+      line-height: 24px; }
+      .index #code-for-atlanta .power-user a {
+        color: #1d2335; }
 
 .section {
+  padding-left: 40px;
+  padding-right: 40px;
   padding-top: 18px;
-  width: 100%; }
+  width: calc(100% - 80px); }
   .section .content {
-    max-width: 1024px; }
+    max-width: 1024px;
+    margin: 0 auto; }
+  .section.diagonal {
+    margin-top: 100px;
+    position: relative; }
+    .section.diagonal:before {
+      z-index: 2;
+      content: '';
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      height: 100px; }
 
 h2 {
   font-size: 48px;
@@ -86,3 +170,6 @@ h3 {
   font-family: "Raleway", "Cubano", Helvetica, Arial;
   font-weight: 700;
   color: #4478ba; }
+
+.shadow {
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4); }
