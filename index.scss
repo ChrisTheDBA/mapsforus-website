@@ -1,0 +1,113 @@
+$primary: #F13F72;
+$secondary: #1D2335;
+$secondary-light: #4478BA;
+$grey: #f2f2f2;
+$grey-dark: #828282;
+$primary-font: 'Muli', 'Avenir Next', 'Avenir', Helvetica, Arial; // weight 400
+$header-font: 'Raleway', 'Cubano', Helvetica, Arial; // weights 700 and 800, for now
+
+.index {
+  font-family: $primary-font;
+  text-align: center;
+  #header {
+    padding-top: 10vw;
+    padding-bottom: 4vw;
+    background-color: $secondary;
+    color: #fff;
+    font-family: $header-font;
+    font-weight: 800;
+    font-size: 10vw;
+  }
+  #intro {
+    background-image: url("assets/coastline-blur.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    margin-bottom: -100px;
+    z-index: 1;
+    .text {
+      max-width: 476px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.5);
+      .tagline {
+        color: $secondary;
+        font-size: 48px;
+        line-height: 61px;
+        margin-bottom: 22px;
+      }
+      ul {
+        list-style: none;
+        margin-left: 0px;
+        padding-left: 1em;
+        text-indent: -1em;
+        color: $primary;
+        font-size: 24px;
+        line-height: 33px;
+        li {
+          &:before {
+            content: "*";
+            padding-right: 5px;
+          }
+        }
+      }
+    }
+  }
+  #use-cases {
+    margin-top: 100px;
+    z-index: 2;
+    position: relative;
+    background-color: $grey;
+    &:before {
+      z-index: 2;
+      content: '';
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 100%;
+      height: 100px;
+      background: url('assets/clear-over-grey.png') no-repeat center center/cover;
+    }
+    h2 {
+      color: $secondary-light;
+    }
+    .columns {
+      margin-left: 60px;
+      margin-right: 60px;
+      .column {
+        margin: 8px;
+        vertical-align: top;
+        display: inline-block;
+        width: calc((100vw - 120px - 60px) / 3);
+        max-width: calc((1024px - 120px - 60px) / 3);
+        h3 {
+          margin-top: -20px;
+        }
+        .description {
+          margin-top: 18px;
+          color: $grey-dark;
+          font-size: 12px;
+          line-height: 16px;
+        }
+      }
+    }
+  }
+}
+.section {
+  padding-top: 18px;
+  width: 100%;
+  .content {
+    max-width: 1024px;
+  }
+}
+h2 {
+  font-size: 48px;
+  font-family: $header-font;
+  font-weight: 500;
+}
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: $header-font;
+  font-weight: 700;
+  color: $secondary-light;
+}

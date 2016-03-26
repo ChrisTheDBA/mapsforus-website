@@ -1,0 +1,88 @@
+.index {
+  font-family: "Muli", "Avenir Next", "Avenir", Helvetica, Arial;
+  text-align: center; }
+  .index #header {
+    padding-top: 10vw;
+    padding-bottom: 4vw;
+    background-color: #1d2335;
+    color: #fff;
+    font-family: "Raleway", "Cubano", Helvetica, Arial;
+    font-weight: 800;
+    font-size: 10vw; }
+  .index #intro {
+    background-image: url("assets/coastline-blur.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 100px;
+    margin-bottom: -100px;
+    z-index: 1; }
+    .index #intro .text {
+      max-width: 476px;
+      margin: 0 auto;
+      background-color: rgba(255, 255, 255, 0.5); }
+      .index #intro .text .tagline {
+        color: #1d2335;
+        font-size: 48px;
+        line-height: 61px;
+        margin-bottom: 22px; }
+      .index #intro .text ul {
+        list-style: none;
+        margin-left: 0px;
+        padding-left: 1em;
+        text-indent: -1em;
+        color: #f13f72;
+        font-size: 24px;
+        line-height: 33px; }
+        .index #intro .text ul li:before {
+          content: "*";
+          padding-right: 5px; }
+  .index #use-cases {
+    margin-top: 100px;
+    z-index: 2;
+    position: relative;
+    background-color: #f2f2f2; }
+    .index #use-cases:before {
+      z-index: 2;
+      content: '';
+      position: absolute;
+      left: 0px;
+      right: 0px;
+      bottom: 100%;
+      height: 100px;
+      background: url("assets/clear-over-grey.png") no-repeat center center/cover; }
+    .index #use-cases h2 {
+      color: #4478ba; }
+    .index #use-cases .columns {
+      margin-left: 60px;
+      margin-right: 60px; }
+      .index #use-cases .columns .column {
+        margin: 8px;
+        vertical-align: top;
+        display: inline-block;
+        width: calc((100vw - 120px - 60px) / 3);
+        max-width: calc((1024px - 120px - 60px) / 3); }
+        .index #use-cases .columns .column h3 {
+          margin-top: -20px; }
+        .index #use-cases .columns .column .description {
+          margin-top: 18px;
+          color: #828282;
+          font-size: 12px;
+          line-height: 16px; }
+
+.section {
+  padding-top: 18px;
+  width: 100%; }
+  .section .content {
+    max-width: 1024px; }
+
+h2 {
+  font-size: 48px;
+  font-family: "Raleway", "Cubano", Helvetica, Arial;
+  font-weight: 500; }
+
+h3 {
+  font-size: 24px;
+  line-height: 30px;
+  font-family: "Raleway", "Cubano", Helvetica, Arial;
+  font-weight: 700;
+  color: #4478ba; }
