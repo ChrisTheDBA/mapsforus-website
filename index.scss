@@ -119,11 +119,11 @@ $header-font: 'Raleway', 'Cubano', Helvetica, Arial; // weights 700 and 800, for
   }
   #create-your-map {
     margin-top: 0px;
-    background-color: $primary;
+    background-color: $secondary-light;
     padding-bottom: 40px;
     &:before {
       bottom: 100%;
-      background: url('assets/clear-over-pink.png') no-repeat center center/cover;
+      background: url('assets/clear-over-blue.png') no-repeat center center/cover;
     }
     h2 {
       color: $grey;
@@ -199,7 +199,7 @@ $header-font: 'Raleway', 'Cubano', Helvetica, Arial; // weights 700 and 800, for
     font-size: 20px;
     &:before {
       bottom: 100%;
-      background: url('assets/pink-over-clear.png') no-repeat center center/cover;
+      background: url('assets/blue-over-clear.png') no-repeat center center/cover;
     }
     img {
       padding-right: 110px;

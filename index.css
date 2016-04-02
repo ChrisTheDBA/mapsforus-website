@@ -91,11 +91,11 @@
         margin-bottom: 26px; }
   .index #create-your-map {
     margin-top: 0px;
-    background-color: #F13F72;
+    background-color: #4478BA;
     padding-bottom: 40px; }
     .index #create-your-map:before {
       bottom: 100%;
-      background: url("assets/clear-over-pink.png") no-repeat center center/cover; }
+      background: url("assets/clear-over-blue.png") no-repeat center center/cover; }
     .index #create-your-map h2 {
       color: #f2f2f2; }
     .index #create-your-map .step {
@@ -156,7 +156,7 @@
     font-size: 20px; }
     .index #code-for-atlanta:before {
       bottom: 100%;
-      background: url("assets/pink-over-clear.png") no-repeat center center/cover; }
+      background: url("assets/blue-over-clear.png") no-repeat center center/cover; }
     .index #code-for-atlanta img {
       padding-right: 110px;
       padding-bottom: 40px; }
