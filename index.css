@@ -4,7 +4,7 @@
   .index #header {
     padding-top: 10vw;
     padding-bottom: 4vw;
-    background-color: #1d2335;
+    background-color: #1D2335;
     color: #fff;
     font-family: "Raleway", "Cubano", Helvetica, Arial;
     font-weight: 800;
@@ -24,7 +24,7 @@
       background-color: rgba(255, 255, 255, 0.5);
       margin-bottom: 36px; }
       .index #intro .text .tagline {
-        color: #1d2335;
+        color: #1D2335;
         font-size: 48px;
         line-height: 61px;
         margin-bottom: 22px; }
@@ -33,7 +33,7 @@
         margin-left: 0px;
         padding-left: 1em;
         text-indent: -1em;
-        color: #f13f72;
+        color: #F13F72;
         font-size: 24px;
         line-height: 33px; }
         .index #intro .text ul li:before {
@@ -47,7 +47,7 @@
       bottom: 100%;
       background: url("assets/clear-over-grey.png") no-repeat center center/cover; }
     .index #use-cases h2 {
-      color: #4478ba; }
+      color: #4478BA; }
     .index #use-cases .columns {
       margin-left: 20px;
       margin-right: 20px; }
@@ -91,7 +91,7 @@
         margin-bottom: 26px; }
   .index #create-your-map {
     margin-top: 0px;
-    background-color: #f13f72;
+    background-color: #F13F72;
     padding-bottom: 40px; }
     .index #create-your-map:before {
       bottom: 100%;
@@ -103,19 +103,50 @@
       text-align: left; }
       .index #create-your-map .step h3 {
         font-size: 36px;
-        color: #1d2335;
+        color: #1D2335;
         font-family: "Muli", "Avenir Next", "Avenir", Helvetica, Arial;
         font-weight: 600;
         padding-bottom: 36px; }
-      .index #create-your-map .step img {
+      .index #create-your-map .step .image {
+        width: 415px;
         display: inline-block; }
+        .index #create-your-map .step .image img {
+          max-width: 415px;
+          max-height: 315px; }
       .index #create-your-map .step .instructions {
         display: inline-block;
-        margin-left: 40px;
-        width: calc(100% - 444px - 60px);
+        margin-left: 50px;
+        width: calc(100% - 444px - 70px);
         vertical-align: top;
         padding-top: 36px;
         line-height: 18px; }
+        .index #create-your-map .step .instructions ul {
+          list-style-type: square; }
+          .index #create-your-map .step .instructions ul ul {
+            margin-left: 24px; }
+          .index #create-your-map .step .instructions ul.padding {
+            padding-top: 20px; }
+        .index #create-your-map .step .instructions a {
+          color: #fff; }
+        .index #create-your-map .step .instructions input {
+          min-width: 300px;
+          height: 38px;
+          font-size: 14px;
+          width: calc(100% - 120px); }
+        .index #create-your-map .step .instructions button {
+          height: 44px;
+          width: 100px;
+          border-radius: 0px;
+          background-color: #1D2335;
+          color: #fff;
+          border: 0px;
+          font-size: 20px;
+          vertical-align: bottom; }
+        .index #create-your-map .step .instructions textarea {
+          margin-top: 20px;
+          width: calc(100% - 16px);
+          min-height: 100px;
+          font-size: 14px; }
   .index #code-for-atlanta {
     margin-top: 100px;
     padding-top: 40px;
@@ -130,7 +161,7 @@
       padding-right: 110px;
       padding-bottom: 40px; }
     .index #code-for-atlanta .a-project-of {
-      color: #f13f72;
+      color: #F13F72;
       display: inline-block;
       width: 110px;
       vertical-align: top;
@@ -138,7 +169,7 @@
     .index #code-for-atlanta .power-user {
       line-height: 24px; }
       .index #code-for-atlanta .power-user a {
-        color: #1d2335; }
+        color: #1D2335; }
 
 .section {
   padding-left: 40px;
@@ -169,7 +200,9 @@ h3 {
   line-height: 30px;
   font-family: "Raleway", "Cubano", Helvetica, Arial;
   font-weight: 700;
-  color: #4478ba; }
+  color: #4478BA; }
 
 .shadow {
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4); }
+
+/*# sourceMappingURL=index.css.map */

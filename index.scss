@@ -138,16 +138,55 @@ $header-font: 'Raleway', 'Cubano', Helvetica, Arial; // weights 700 and 800, for
         font-weight: 600;
         padding-bottom: 36px;
       }
-      img {
+      .image {
+        width: 415px;
         display: inline-block;
+        img {
+          max-width: 415px;
+          max-height: 315px;
+        }
       }
       .instructions {
         display: inline-block;
-        margin-left: 40px;
-        width: calc(100% - 444px - 60px);
+        margin-left: 50px;
+        width: calc(100% - 444px - 70px);
         vertical-align: top;
         padding-top: 36px;
         line-height: 18px;
+        ul {
+          list-style-type: square;
+          ul {
+            margin-left: 24px;
+          }
+          &.padding {
+            padding-top: 20px;
+          }
+        }
+        a {
+          color: #fff;
+        }
+        input {
+          min-width: 300px;
+          height: 38px;
+          font-size: 14px;
+          width: calc(100% - 120px);
+        }
+        button {
+          height: 44px;
+          width: 100px;
+          border-radius: 0px;
+          background-color: $secondary;
+          color: #fff;
+          border: 0px;
+          font-size: 20px;
+          vertical-align: bottom;
+        }
+        textarea {
+          margin-top: 20px;
+          width: calc(100% - 16px);
+          min-height: 100px;
+          font-size: 14px;
+        }
       }
     }
   }

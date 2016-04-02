@@ -1,11 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>mapsfor.us</title>
+  <title>Maps For Us</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png" />
   <link href='https://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Raleway:800,700,500' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" type="text/css" href="reset.css">
   <link rel="stylesheet" type="text/css" href="index.css">
+
+  <!-- Lightbox -->
+  <link rel="stylesheet" type="text/css" href="lightbox/dist/css/lightbox.min.css">
+
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -32,7 +37,7 @@
       </ul>
     </div>
     <div class="screenshot">
-      <img src="assets/image-placeholder.png" class="shadow">
+      <a href="assets/intro-screenshots.png" data-lightbox="intro"><img src="assets/intro-screenshots.png" alt="screenshots of spreadsheet and map"></a>
     </div>
   </div></div>
   <div id="use-cases" class="section diagonal"><div class="content">
@@ -41,25 +46,25 @@
       <div class="column">
         <img src="assets/github.png" alt="octocat">
         <h3>Hackathons</h3>
-        <div class="description">
+<!--         <div class="description">
           Vestibulum iaculis cursus purus in suscipit.<br>
           Phasellus id sem sed magna blandit consequat. 
-        </div>
+        </div> -->
       </div>
       <div class="column">
         <img src="assets/smiley.png" alt="smiley">
         <h3>Non-Technical Team Members</h3>
-        <div class="description">
-          Sed ullamcorper lacinia ullamcorper. In lacinia leo maximus dapibus hendrerit. Fusce tincidunt in urna sit amet placerat. Quisque quis molestie tellus, et mollis libero. 
-        </div>
+<!--         <div class="description">
+          It's as easy as updating a Google Spreadsheet!
+        </div> -->
       </div>
       <div class="column">
         <img src="assets/map-icon.png" alt="map icon">
         <h3>Quick Data Visualization</h3>
-        <div class="description">
+<!--         <div class="description">
           Donec a iaculis velit. Donec viverra turpis quis<br>
           pulvinar dictum. Duis ornare placerat velit ut bibendum. Quisque at luctus nulla.
-        </div>
+        </div> -->
       </div>
     </div>
   </div></div>
@@ -79,47 +84,85 @@
     <h2>Create Your Map!</h2>
     <div class="step">
       <h3>1) Duplicate the Google Doc Template</h3>
-      <img src="assets/image-placeholder.png" class="shadow">
+      <div class="image"><a href="assets/duplicate1.png" data-lightbox="create" data-title="1) Duplicate the Google Doc Template"><img src="assets/duplicate1.png" alt="File -> Make a copy" class="shadow"></a></div>
       <div class="instructions">
-        Vestibulum iaculis cursus purus in suscipit. 
-        Phasellus id sem sed magna blandit consequat. 
-        Sed ullamcorper lacinia ullamcorper. In lacinia leo maximus dapibus hendrerit. Fusce tincidunt in urna sit amet placerat. Quisque quis molestie tellus, et mollis libero. 
+        <ul>
+          <li>Go to <a href="https://docs.google.com/spreadsheets/d/1I1bHQTUNCPHD6AuyNQfYV6g0qqJI8OjF9UHP9MW4XYg/edit#gid=0">the template spreadsheet</a></li>
+          <li>File -> Make a Copy</li>
+          <li>Give it a name and hit "OK"</li>
+          <li>Make your spreadsheet public (so the map can see it):
+            <ul>
+              <li>File -> Publish Document</li>
+              <li>Leave "Entire Document" selected</li>
+              <li>Leave "Web page" selected</li>
+              <li>Hit "Publish"</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="step">
       <h3>2) Add Your Data</h3>
-      <img src="assets/image-placeholder.png" class="shadow">
+      <div class="image"><a href="assets/add-data1.png" data-lightbox="create" data-title="2) Add Your Data"><img src="assets/add-data1.png" class="shadow" alt="filled in spreadsheet"></a></div>
       <div class="instructions">
-        Vestibulum iaculis cursus purus in suscipit. 
-        Phasellus id sem sed magna blandit consequat. 
-        Sed ullamcorper lacinia ullamcorper. In lacinia leo maximus dapibus hendrerit. Fusce tincidunt in urna sit amet placerat. Quisque quis molestie tellus, et mollis libero. 
+        <ul>
+          <li>In the "Information" sheet:
+            <ul>
+              <li>For each row, fill out the "Customization" column</li>
+              <li>Tiles can be previewed <a href="https://leaflet-extras.github.io/leaflet-providers/preview/">here</a></li>  
+            </ul>
+          </li>
+          <li>In the "Points" sheet:
+            <ul>
+              <li>Fill out the title and description with the data you would like to see displayed with each point</li>
+              <li>Fill out addresses or latitude-longitude pairs</li>
+              <li>Choose an icon for each marker (here you can put the name of <a href="https://fortawesome.github.io/Font-Awesome/icons/">any Font Awesome icon</a>)</li>
+              <li>Use the dropdown in the Marker Color cell to select the color of each marker</li>
+              <li>Provide a color for each marker icon (any <a href="http://www.w3schools.com/colors/colors_names.asp">HTML color name or hex code</a> is fine)</li>
+              <li>If you would like your map to have layers (categories), assign each marker to a layer</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
     <div class="step">
       <h3>3) Get Your Coordinates</h3>
-      <img src="assets/image-placeholder.png" class="shadow">
+      <div class="image"><a href="assets/geocode-single.png" data-lightbox="create" data-title="3) Get Your Coordinates"><img src="assets/geocode-single.png" class="shadow"></a></div>
       <div class="instructions">
-        Vestibulum iaculis cursus purus in suscipit. 
-        Phasellus id sem sed magna blandit consequat. 
-        Sed ullamcorper lacinia ullamcorper. In lacinia leo maximus dapibus hendrerit. Fusce tincidunt in urna sit amet placerat. Quisque quis molestie tellus, et mollis libero. 
+        (If you already have coordinates, skip this step.)<br><br>
+        <ul>
+          <li>Click and drag to select the addresses and the empty latitude and longitude cells</li>
+          <li>Geocode -> Geocode Selected Cells (Address to Lat, Long)</li>
+          <li>Wait for the script to finish running</li>
+        </ul> 
       </div>
     </div>
     <div class="step">
       <h3>4) Make Your Map!</h3>
-      <img src="assets/image-placeholder.png" class="shadow">
+      <div class="image"><a href="assets/url.png" data-lightbox="create" data-title="4) Make Your Map!"><img src="assets/url.png" class="shadow" alt="copy the URL"></a></div>
       <div class="instructions">
-        Vestibulum iaculis cursus purus in suscipit. 
-        Phasellus id sem sed magna blandit consequat. 
-        Sed ullamcorper lacinia ullamcorper. In lacinia leo maximus dapibus hendrerit. Fusce tincidunt in urna sit amet placerat. Quisque quis molestie tellus, et mollis libero. 
+        <ul>
+          <li>In your Google Spreadsheet, copy the part of the URL between "speadsheets/d/" and "/edit"</li>
+          <li>Paste it in the box below and hit "Go!"</li>
+        </ul><br>
+        <input type="text" placeholder="1I1bHQTUNCPHD6AuyNQfYV6g0qqJI8OjF9UHP9MW4XYg" id="mapField">
+        <button onclick="goToMap()">Go!</button>
       </div>
     </div>
     <div class="step">
       <h3>5) Embed in Your Site</h3>
-      <img src="assets/image-placeholder.png" class="shadow">
+      <div class="image"><a href="assets/embed.png" data-lightbox="create" data-title="5) Embed in Your Site"><img src="assets/embed.png" class="shadow" alt="embedded map"></a></div>
       <div class="instructions">
-        Vestibulum iaculis cursus purus in suscipit. 
-        Phasellus id sem sed magna blandit consequat. 
-        Sed ullamcorper lacinia ullamcorper. In lacinia leo maximus dapibus hendrerit. Fusce tincidunt in urna sit amet placerat. Quisque quis molestie tellus, et mollis libero. 
+        <ul>
+          <li>In your Google Spreadsheet, copy the part of the URL between "speadsheets/d/" and "/edit"</li>
+          <li>Paste it in the box below and hit "Get Code"</li>
+        </ul><br>
+        <input type="text" placeholder="1I1bHQTUNCPHD6AuyNQfYV6g0qqJI8OjF9UHP9MW4XYg" id="embedField">
+        <button onclick="getEmbedCode()">Get Code</button>
+        <ul class="padding">
+          <li>Now you can copy the below code and add it to the HTML of your website!</li>
+        </ul>
+        <textarea id="embedTextarea"></textarea>
       </div>
     </div>
   </div></div>
@@ -131,6 +174,33 @@
       <a href="https://github.com/codeforatlanta/mapsforus" target="_blank">Learn how to deploy your own map here</a>
     </div>
   </div></div>
+  <script type="text/javascript">
+    function validateString(string) {
+      if (string[0] === '/') {
+        string = string.slice(1, string.length);
+      }
+      if (string[string.length - 1] === '/') {
+        string = string.slice(0, string.length - 1);
+      }
+      return string;
+    }
+    function goToMap() {
+      var mapString = validateString(document.getElementById('mapField').value);
+      var url = '';
+      if (mapString === '') {
+        url = 'https://mapsfor.us/map.html?ID=1I1bHQTUNCPHD6AuyNQfYV6g0qqJI8OjF9UHP9MW4XYg';
+      } else {
+        url = 'https://mapsfor.us/map.html?ID=' + mapString;
+      }
+      window.open(url, '_blank');
+    }
+    function getEmbedCode() {
+      var embedString = validateString(document.getElementById('embedField').value);
+      var embedCode = '<iframe style="border: 0;" src="https://mapsfor.us/map.html?ID=' + embedString + '" height="450" width="900" frameborder="0" scrolling="no"></iframe>';
+      document.getElementById('embedTextarea').value = embedCode;
+    }
+  </script>
+  <script type="text/javascript" src="lightbox/dist/js/lightbox-plus-jquery.min.js"></script>
 </body>
 </html>
 
